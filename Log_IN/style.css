@@ -16,6 +16,7 @@ form{
    justify-content: center;
    align-items: center;
    color: white;
+   border-radius: 100px;
 }
 .box{
     padding: 2px;
@@ -39,13 +40,17 @@ form{
     font-size: 20px;
     font-weight: bold;
     color: white;
+    
   }
 .submit:hover{
     cursor: pointer;
+    animation: sub 0.5s ease-in-out forwards;
 }
-.submit::after{
-    position:absolute;
-     height: scale(100% + 10px);
-    width: scale(100% +10px);
-
+@keyframes sub {
+    0%{
+        transform:scale(1.1);
+    }
+    100%{
+        transform:scale(1.1);
+    }
 }
