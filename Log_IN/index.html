@@ -2,47 +2,54 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log In</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log In</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-   <form>
+  <form>
     <h2>LogIn</h2>
     <div>
-      <label>Name</label>
-      <input type="text" name="userName" class="name box">
+      <label class="box">Name</label>
+      <input type="text" name="userName" class="input">
     </div>
     <div>
-      <label>Father's Name</label>
-      <input type="text" name="userfathername" class="f_name box">
+      <label class="box">Father's Name</label>
+      <input type="text" name="userfathername" class="input">
     </div>
     <div>
-      <label>Age</label>
-      <input type="number" name="userAge" class="age box">
+      <label class="box">Age</label>
+      <input type="number" name="userAge" class="input">
     </div>
 
-    <p>Gender:</p>
-    <label for="Male">Male</label>
-    <input type="radio" name="gender" value="male" id="Male">
+    <div>
+      <p class="box">Gender:</p>
+      <label for="Male" class="box">Male</label>
+      <input type="radio" name="gender" value="male" class="input">
 
-     <label for="Female">Female</label>
-    <input type="radio" name="gender" value="female" id="Female">
+      <label for="Female" class="box">Female</label>
+      <input type="radio" name="gender" value="female" class="input">
 
-    <label for="Other">Other</label>
-    <input type="radio" name="gender" value="other" id="Other">
+      <label for="Other" class="box">Other</label>
+      <input type="radio" name="gender" value="other" class="input">
+    </div>
 
-     <p>Courses:</p>
-    <label for="C++">C++</label>
+    <div>
+    <p class="box">Courses:</p>
+    <label for="C++" class="box">C++</label>
     <input type="checkbox" value="C++" name="subject">
 
-    <label for="Python">Python</label>
+    <label for="Python" class="box">Python</label>
     <input type="checkbox" value="Python" name="subject">
 
-    <label for="C#">C#</label>
+    <label for="C#" class="box">C#</label>
     <input type="checkbox" value="C#" name="subject">
+    </div>
+
+    <button class="submit">Submit</button>
+    
 </body>
 
 </html>
