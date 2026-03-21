@@ -8,7 +8,7 @@ align-items: center;
  background:linear-gradient(to bottom,rgb(4, 53, 53),rgb(83, 46, 46));
 }
 form{
-    background:linear-gradient(to top,rgb(6, 49, 49),rgb(64, 40, 40));
+     background:linear-gradient(to top,rgb(6, 49, 49),rgb(64, 40, 40)); 
    height: 500px;
    width: 500px;
    display: flex;
@@ -17,6 +17,7 @@ form{
    align-items: center;
    color: white;
    border-radius: 100px;
+   border: 5px solid transparent;
 }
 .box{
     padding: 2px;
@@ -30,8 +31,8 @@ form{
 }
   .submit{
     position: relative;
-    height: 50px;
-    width: 200px;
+    height: 40px;
+    width: 150px;
     margin: 50px;
     padding: 10px;
     border-radius: 10px;
@@ -53,4 +54,15 @@ form{
     100%{
         transform:scale(1.1);
     }
+}
+h2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    height: 50px;
+    width: 300px;
+border: none;
+border-radius: 10px;
 }
