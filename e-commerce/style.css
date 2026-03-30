@@ -1,0 +1,77 @@
+*{
+padding: 0;
+margin: 0;
+}
+ .container{
+    background-color: aqua;
+    height: 70px;
+    width: 100%;
+    /* made flex item sizes visible */
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+.logo_container{
+    height: 100%;
+    width: 10%;
+} 
+.nav_container{
+    height: 100%;
+    width: 70%;
+    /* display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; */
+
+}
+
+.Home{
+    font-size: 25px;
+    font-weight: bold;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+.intro{
+    background-color: aquamarine;
+    height: 700px;
+    width: 100%;
+}
+.image{
+    background-color: blue;
+    height: 600px;
+    width: 100%;
+}
+.nav-humburger{
+    height:50px;
+
+}
+.nav_bar{
+    height: 50px;
+    background-color: aquamarine;
+}
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  /* flex-flow: column; */
+  justify-content: space-between;
+  height: 2.5rem;
+  width: 2.5rem;
+  cursor: pointer;
+}
+
+.hamburger-menu .bar {
+  height: 15px;
+  background: orange;
+  border-radius: 5px;
+  margin: 3px 0;
+  transform-origin: left;
+  transition: all 0.5s;
+}
