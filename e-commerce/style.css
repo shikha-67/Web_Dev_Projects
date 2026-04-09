@@ -4,7 +4,7 @@ margin: 0;
 }
  .container{
     background-color: aqua;
-    height: 70px;
+    height: 50px;
     width: 100%;
     /* made flex item sizes visible */
     display: flex;
