@@ -1,0 +1,54 @@
+body{
+    height: 100vh;
+    background:linear-gradient(to top, rgb(49, 35, 35),rgb(175, 200, 200));
+    background-repeat: no-repeat;
+}
+.project{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.header_1{
+    color: white;
+     height:100px;
+    width: 300px;
+    font-size: 40px;
+     height:100px;
+    background-color: black;
+     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+
+}.project_list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+ul{
+    
+    height: 300px;
+    width: 400px;
+   display: grid;
+   grid-template-columns:500px;
+   grid-template-rows:50px;
+    background-color:rgb(159, 223, 226);
+    box-shadow:-5px -5px 5px 5px,5px 5px 5px;
+    border-radius: 50px;
+}
+ul li{
+    margin-top:40px ;
+    list-style: none;
+   font-size: 20px;
+    color:black;
+    font-weight: bold;
+}
+ul li a{
+    font-size: 15px;
+    color:black;
+    font-weight: bold;
+
+}
