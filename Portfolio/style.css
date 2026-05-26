@@ -1,43 +1,65 @@
-*{
+* {
     padding: 0;
     margin: 0;
+    color: white;
 }
-body{
+
+body {
     height: 100vh;
-    background:linear-gradient(-150deg,rgb(120, 44, 118),#1e103b);
+    background: linear-gradient(-150deg, rgb(120, 44, 118), #371d69);
 }
-header{
-    height:8vw ;
-    background:linear-gradient(rgb(120, 44, 118),#1e103b);
+
+header {
+    height: 8vmin;
+    background: linear-gradient(rgb(120, 44, 118), #371d69);
     box-shadow: 1px 3px 10px 5px rgb(73, 15, 73);
 }
 
-nav ul{
+nav ul {
     display: flex;
     flex-direction: row;
     gap: 13vw;
     margin-right: 0;
 }
-nav ul li{
+
+nav ul li {
     list-style: none;
 }
-nav ul li a{
+
+nav ul li a {
     text-decoration: none;
     font-weight: bold;
-    font-size: 5vw;
-  
-}
-#information{
-    /* background-color: rgb(169, 131, 131); */
-    height: 200;
-    display: flex;
-    gap: 8vw;
+    font-size: 5vmin;
+    color: white;
+
 }
 
-#profile_image{
-    width: 100px;
-    height: 100px;
+#information {
+    /* background-color: rgb(169, 131, 131); */
+    margin-top: 2vmax;
+    height: 12vmax;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* gap: 3vmax; */
+}
+
+.message {
+    font-size: 8vmin;
+}
+
+.profile_image {
+    margin-left: auto;
+}
+
+#profile_image {
+    /* width: 100px;
+    height:100px; */
+    /* this is breaking the image and evertime need to fix the this for differnt sizes   */
     border-radius: 50%;
+    max-width: rem;
+    aspect-ratio: 1/1;
+    /*forces the height to equal the width */
     object-fit: cover;
-    object-position: top center; 
+    /* Prevents the image from stretching or distorting */
+    object-position: top center;
 }
