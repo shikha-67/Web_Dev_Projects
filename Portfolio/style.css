@@ -7,11 +7,15 @@
 body {
     height: 100vh;
     background: linear-gradient(-150deg, rgb(120, 44, 118), #371d69);
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
 }
 
 header {
     height: 8vmin;
     background: linear-gradient(rgb(120, 44, 118), #371d69);
+    background-repeat: no-repeat;
     box-shadow: 1px 3px 10px 5px rgb(73, 15, 73);
 }
 
@@ -36,15 +40,22 @@ nav ul li a {
 
 #information {
     /* background-color: rgb(169, 131, 131); */
-    margin-top: 2vmax;
-    height: 12vmax;
+    margin-top: 1.5vmax;
+    /* height: 12vmax; */
+    /* grid-row-start: 2; */
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    /* gap: 3vmax; */
+    grid-template-columns: 33vmin 1fr;
+    gap: 4vmax;
+    margin-left: 2vmax;
+    margin-right: 2vmax;
+
 }
 
-.message {
-    font-size: 8vmin;
+.message{
+    margin-top:2vh;
+}
+.message,.message_1{
+    font-size: 6vmin;
 }
 
 .profile_image {
@@ -56,10 +67,32 @@ nav ul li a {
     height:100px; */
     /* this is breaking the image and evertime need to fix the this for differnt sizes   */
     border-radius: 50%;
-    max-width: rem;
     aspect-ratio: 1/1;
+    width: 100%;
+    height: auto;
     /*forces the height to equal the width */
     object-fit: cover;
     /* Prevents the image from stretching or distorting */
     object-position: top center;
+}
+
+#Frontend {
+    /* tag section */
+    margin-top: 1vh;
+    height: 4vh;
+    background-color: white;
+    color: black;
+    width: 40vmin;
+    margin-left: 0px;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 4vmin;
+}
+@media (min-width:400px){
+    .message,.message_1{
+    font-size: 4vmax;
+}
 }
