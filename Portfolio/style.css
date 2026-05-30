@@ -7,33 +7,25 @@
 body {
     min-height: 100vh;
     background: linear-gradient(-150deg, rgb(120, 44, 118), #371d69);
-    display:grid;
-    grid-template-rows:8vmin 35vmin 1fr;
-    gap: 2vh;
-    /* gap: 2vh; */
-    /* display: flex;
-    flex-direction: column;
-    justify-content:10vmax; */
 }
 
 header {
-    /* margin-left: 2vw; */
-    height: 8vmin;
+    min-height:40px;
+    height: auto;
     background: linear-gradient(rgb(120, 44, 118), #371d69);
     background-repeat: no-repeat;
     box-shadow: 1px 3px 10px 5px rgb(73, 15, 73);
 }
 
 nav ul {
-    margin-left:4vw ;
-    /* margin: auto; */
+    margin: 0px 5vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-right: 2vw;
 }
 
 nav ul li {
+    margin: 1vh 0px;
     list-style: none;
 }
 
@@ -42,21 +34,14 @@ nav ul li a {
     font-weight: bold;
     font-size: 5vmin;
     color: white;
-
 }
 
 #information {
-    /* background-color: rgb(169, 131, 131); */
     margin-top: 1.5vmax;
-    /* height: 12vmax; */
-    /* grid-row-start: 2; */
     display: grid;
     grid-template-columns: 33vmin 1fr;
     gap: 4vmax;
-    /* margin-left: 2vmax;
-    margin-right: 2vmax; */
     margin: 2vmax;
-    /* height:20vmax;  */
 }
 
 .message,.message_1{
@@ -66,16 +51,11 @@ nav ul li a {
     margin:2vmin;
 }
 #profile_image {
-    /* width: 100px;
-    height:100px; */
-    /* this is breaking the image and evertime need to fix the this for differnt sizes   */
     border-radius: 50%;
     aspect-ratio: 1/1;
     width: 100%;
-    /*forces the height to equal the width */
-    object-fit: cover;
-    /* Prevents the image from stretching or distorting */
-    object-position: top center;
+   object-fit: cover;
+   object-position: top center;
 }
 .intro{
     margin: 2vmin;
@@ -103,7 +83,7 @@ nav ul li a {
     grid-template-rows: 10vh 1fr;
     gap: 2vmin;
 }
-#About h2{
+.heading{
     height:10vmin;
     margin: auto;
     border-radius: 1rem;
@@ -119,3 +99,4 @@ nav ul li a {
 .paragraph{
     font-size:4vmin;
 }
+@media (min-width:)
