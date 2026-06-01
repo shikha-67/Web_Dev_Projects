@@ -89,19 +89,56 @@ main {
 #about {
   /* grid-row-start: 2; */
 }
-/* @media (min-width: 400px){
-  #information {
-    margin-top: 3vh;
-    margin-bottom: 10px;
-  }
-  
-} */
-/* @media (min-width:601px){
-  #information {
-    margin-top: 10vh;
-    margin-bottom: 25px;
-  }
-} */
+.common_class{
+  margin: 3vw;
+}
+.heading {
+  margin: 2vh 30vw;
+  width: 25vw;
+  padding: 2px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 3.5vw;
+  min-height: 20px;
+  height: auto;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.paragraph{
+  font-size:1.9vw ;
+}
+.education{
+  font-size: 1.6vw;
+}
+.bold{
+  font-weight: bold;
+}
+.logo{
+  height: 30px;
+}
+.skill{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+padding: 5px;
+border: 1px solid gold;
+border-radius: 5px;
+ background: linear-gradient(rgb(120, 44, 118), #371d69);
+  box-shadow: 1px 3px 10px 5px rgb(73, 15, 73);
+}
+.skill_container{
+  display: flex;
+  flex: row;
+  gap: 5vw;
+}
+.text{
+ font-size:1.9vw ;
+padding: 5px;
+}
 @media (min-width: 576px) {
   #information {
     margin-top: 9vh;
