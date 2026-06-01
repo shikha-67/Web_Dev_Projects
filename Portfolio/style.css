@@ -22,7 +22,7 @@ header {
 }
 
 nav ul {
-  margin: 0px 5vw;
+  margin: 0px 3vw;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -86,9 +86,6 @@ main {
   font-weight: bold;
   font-size: 6.5vw;
 }
-#about {
-  /* grid-row-start: 2; */
-}
 .common_class{
   margin: 3vw;
 }
@@ -143,11 +140,47 @@ border-radius: 5px;
  font-weight: bold;
   margin:1px;
 }
+.Project{
+  margin-top: 7h;
+  display: flex;
+  flex-direction: row;
+  gap: 5vw;
+}
+.project_grid{
+  border: 1px solid white;
+  display: grid;
+  grid-template-rows:100px 30px;
+}
+.project_scroll_box{
+  grid-row-start: 1;
+  width: 100%;
+  height: 80px;
+  overflow-y: scroll;
+  border-radius: 8px;   
+}
+.project_img{
+width: 100%;
+height: auto;
+}
+.project_heading{
+  grid-row-start: 2;
+  color: white;
+  background-color:black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size:4vw ;
+}
 @media (min-width: 576px) {
   #information {
     margin-top: 9vh;
     margin-bottom: 10px;
     grid-template-columns: 28vw 1fr;
+  }
+  .project_scroll_box{
+    margin-top: 15vh;
+  width: 100%;
+  /* height: 110px; */
   }
 }
 @media (min-width: 992px) {
@@ -156,9 +189,17 @@ border-radius: 5px;
     margin-bottom: 10px;
     grid-template-columns: 25vw 1fr;
   }
+  .project_scroll_box{
+  width: 100%;
+  /* height: 200px; */
+  }
 }
 @media (min-width: 1200px) {
   #information {
     grid-template-columns: 22vw 1fr;
+  }
+   .project_scroll_box{
+  width: 100%;
+  /* height: 245px; */
   }
 }
