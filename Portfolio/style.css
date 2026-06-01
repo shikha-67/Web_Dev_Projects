@@ -6,8 +6,10 @@
 
 body {
   min-height: 100vh;
-  background: linear-gradient(-150deg, rgb(120, 44, 118), #371d69);
+  background-color: #1a1a2e; /* A sleek, professional dark blue/purple tint */
+  color: #ffffff;
 }
+ 
 
 header {
   position: fixed;
@@ -16,9 +18,9 @@ header {
   z-index: 1000;
   min-height: 40px;
   height: auto;
-  background: linear-gradient(rgb(120, 44, 118), #371d69);
-  background-repeat: no-repeat;
-  box-shadow: 1px 3px 10px 5px rgb(73, 15, 73);
+  background-color: #1a1a2e; /* A sleek, professional dark blue/purple tint */
+   background-repeat: no-repeat;
+  box-shadow: 1px 3px 10px 5px #1e1e40;
 }
 
 nav ul {
@@ -37,7 +39,7 @@ nav ul li a {
   text-decoration: none;
   font-weight: bold;
   font-size: 5vmin;
-  color: white;
+ color: #f0a500
 }
 main {
   margin-top: 45px;
@@ -66,7 +68,7 @@ main {
   margin-left: 2vw;
   margin-top: 1vh;
   background-color: white;
-  color: black;
+ color: #302714;
   width: 40vmin;
   border-radius: 1rem;
   display: flex;
@@ -85,6 +87,7 @@ main {
   padding: 0px 2vw;
   font-weight: bold;
   font-size: 6.5vw;
+  color: #f0a500;
 }
 .common_class{
   margin: 3vw;
@@ -98,8 +101,7 @@ main {
   font-size: 3vw;
   min-height: 15px;
   height: auto;
-  background-color: white;
-  color: black;
+  color: #f0a500;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -127,8 +129,8 @@ main {
 padding: 5px;
 border: 1px solid gold;
 border-radius: 5px;
- background: linear-gradient(rgb(120, 44, 118), #371d69);
-  box-shadow: 1px 3px 10px 5px rgb(73, 15, 73);
+  background-color: #212138;
+ box-shadow: 1px 3px 10px 5px #2b2b68;
 }
 .skill_container{
   display: flex;
