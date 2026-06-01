@@ -94,12 +94,12 @@ main {
 }
 .heading {
   margin: 2vh 30vw;
-  width: 25vw;
+  width: 20vw;
   padding: 2px;
   border-radius: 20px;
   font-weight: bold;
-  font-size: 3.5vw;
-  min-height: 20px;
+  font-size: 3vw;
+  min-height: 15px;
   height: auto;
   background-color: white;
   color: black;
@@ -108,7 +108,7 @@ main {
   align-items: center;
 }
 .paragraph{
-  font-size:1.9vw ;
+  font-size:1.8vw ;
 }
 .education{
   font-size: 1.6vw;
@@ -117,7 +117,10 @@ main {
   font-weight: bold;
 }
 .logo{
-  height: 30px;
+  margin:5px 1vw;
+  width: 8vw;
+  min-height: 30px;
+  height: auto;
 }
 .skill{
   display: flex;
@@ -136,8 +139,9 @@ border-radius: 5px;
   gap: 5vw;
 }
 .text{
- font-size:1.9vw ;
-padding: 5px;
+ font-size:1.9vw;
+ font-weight: bold;
+  margin:1px;
 }
 @media (min-width: 576px) {
   #information {
