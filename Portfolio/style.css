@@ -134,7 +134,7 @@ main {
   font-size: 1.6vw;
   padding: 2px;
 }
-.bold {
+.bold{
   font-weight: bold;
   font-size: 1.8vw;
 }
@@ -153,7 +153,7 @@ main {
   padding:0.8vw;
   border: 0.3vw solid gold;
   border-radius: 1.5vw;
-  background-color: #141436;
+  background-color: #31315d;
   /* box-shadow: 1px 3px 10px 5px #68622b; */
 }
 .skill_container {
@@ -161,14 +161,105 @@ main {
   gap: 5vw;
   padding: 2vw;
   margin-top: 2vw;
-  display: flex;
   flex-wrap: wrap;
 }
 .text {
-  font-size: 1.5vw;
+  font-size: 1.4vw;
   font-weight: bold;
   margin: 1px;
 }
+.project_grid{
+  display: grid;
+  grid-template-rows:auto auto auto auto auto;
+}
+.Project_image{
+  height: 100%;
+  width: 100%;
+}
+.Project_img_container{
+   width: 100%; 
+  min-height:70px;
+  height: auto;
+  overflow-y: scroll;
+  border-radius: 2vw; 
+
+}
+.Project_title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   font-size: 2.5vw;
+   font-weight: bold;
+   /* padding: 0.3vw; */
+   margin-top: 1vw;
+   margin-bottom: 3vw;
+}
+.project_tag{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-weight: bold;
+  font-size: 1.8vw;
+  padding: 1vw;
+  margin: 0.5vw;
+}
+.project_tag p{
+  padding: 0.3vw;
+  color: black;
+  background-color:gold;
+  border-radius: 0.3vw;
+}
+.project_description{
+  font-weight: bold;
+   font-size: 2vw;
+  padding: 0.3vw;
+}
+.project_text {
+  font-size: 1.8vw;
+  padding:0.3vw;
+}
+.button_container{
+  display: flex;
+  gap: 2vw;
+  flex-wrap: wrap;
+}
+.link_button{
+  text-decoration: none;
+  background-color: #2b2b68;
+  font-size: 1.8vw;
+  font-weight: bold;
+  padding: 1.5vw;
+  margin: 0.5vw;
+  border-radius: 2vw;
+}
+/* .Project{
+  margin-top: 7h;
+  display: flex;
+  flex-direction: row;
+   gap: 5vw; 
+ } 
+.project_grid{
+  border: 1px solid white;
+   display: grid;
+  grid-template-rows:100px 30px; 
+} 
+ .project_scroll_box{
+  grid-row-start: 1; 
+  width: 100%; 
+  height: 80px;
+  overflow-y: scroll;
+  border-radius: 8px;   
+} 
+.project_heading{
+  grid-row-start: 2;
+  color: white;
+  background-color:black;
+   display: flex;
+  justify-content: center;
+  align-items: center; 
+  font-size:4vw ;
+} */
+
 @media (min-width: 576px) {
   #information {
     margin-top: 9vh;
