@@ -89,11 +89,27 @@ main {
   font-size: 6.5vw;
   color: #f0a500;
 }
+.details_container{
+  /* column container */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.column_1{
+  /* column 1 => container it contains all rows of column 1 */
+  grid-column-start: 1;
+   display: grid;
+  grid-template-rows:auto auto auto;
+}
+.column_2{
+  grid-column-start: 2;
+}
 .common_class{
-  margin: 3vw;
+  /* all sections container */
+  margin: 2vw;
+  padding: 2vw;
 }
 .heading {
-  margin: 2vh 30vw;
+  /* margin-bottom: 10px; */
   width: 20vw;
   padding: 2px;
   border-radius: 20px;
@@ -103,75 +119,23 @@ main {
   height: auto;
   color: #f0a500;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content:flex-start;
+  align-items: flex-start;
 }
 .paragraph{
   font-size:1.8vw ;
+  box-shadow: 1px 3px 10px 5px #2b2b68;
+  padding: 2vw;
+  margin-top: 2vw;
+  border-radius: 2vw;
 }
 .education{
   font-size: 1.6vw;
+  padding: 2px;
 }
 .bold{
   font-weight: bold;
-}
-.logo{
-  margin:5px 1vw;
-  width: 8vw;
-  min-height: 30px;
-  height: auto;
-}
-.skill{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-padding: 5px;
-border: 1px solid gold;
-border-radius: 5px;
-  background-color: #212138;
- box-shadow: 1px 3px 10px 5px #2b2b68;
-}
-.skill_container{
-  display: flex;
-  flex: row;
-  gap: 5vw;
-}
-.text{
- font-size:1.9vw;
- font-weight: bold;
-  margin:1px;
-}
-.Project{
-  margin-top: 7h;
-  display: flex;
-  flex-direction: row;
-  gap: 5vw;
-}
-.project_grid{
-  border: 1px solid white;
-  display: grid;
-  grid-template-rows:100px 30px;
-}
-.project_scroll_box{
-  grid-row-start: 1;
-  width: 100%;
-  height: 80px;
-  overflow-y: scroll;
-  border-radius: 8px;   
-}
-.project_img{
-width: 100%;
-height: auto;
-}
-.project_heading{
-  grid-row-start: 2;
-  color: white;
-  background-color:black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size:4vw ;
+   font-size:1.8vw ;
 }
 @media (min-width: 576px) {
   #information {
@@ -182,7 +146,6 @@ height: auto;
   .project_scroll_box{
     margin-top: 15vh;
   width: 100%;
-  /* height: 110px; */
   }
 }
 @media (min-width: 992px) {
@@ -193,7 +156,6 @@ height: auto;
   }
   .project_scroll_box{
   width: 100%;
-  /* height: 200px; */
   }
 }
 @media (min-width: 1200px) {
@@ -202,6 +164,5 @@ height: auto;
   }
    .project_scroll_box{
   width: 100%;
-  /* height: 245px; */
   }
 }
