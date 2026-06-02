@@ -1,0 +1,274 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: linear-gradient(-150deg, rgb(39, 118, 93), rgb(43, 23, 27));
+  background-repeat: no-repeat;
+}
+header {
+  background: linear-gradient(-150deg, rgb(39, 118, 93), rgb(43, 23, 27));
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+h1 {
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
+  height: 20vmin;
+  color: white;
+  font-size: 8vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.5rem;
+   background: linear-gradient(-150deg, rgb(102, 53, 90), #6169c1);
+}
+main {
+  padding-top: 20vmin;
+}
+.div_1 {
+  aspect-ratio: 16/9; /* The Trick: Use aspect-ratio to match your image dimensions */
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%; /* Forces the image to stretch to the exact edges */
+  background-image: url("Images/Img_compressed.webp");
+  overflow: hidden;
+}
+.message {
+  font-weight: bold;
+  font-size: 10vmin;
+  margin-left: 6vmin;
+  margin-top: 3vmin;
+  line-height: 0.6; /*removing space between tranforming future*/
+  color: rgb(11, 47, 11);
+}
+
+.heading {
+  height: 10vh;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10vmin;
+  color: black;
+  font-weight: bold;
+  font-size: 20vmin;
+}
+.div_2 {
+  height: 270px;
+}
+.about h2 {
+  background-color: white;
+  box-shadow: 1px 1px 20px 2px rgb(44, 21, 53);
+  height: 35px;
+  width: 130px;
+  margin: 4vmin auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  border-radius: 10px;
+  font-size: 3vmax;
+}
+.about_paragraph {
+  color: white;
+  font-size: 2vmax;
+  padding: 0px 4vmin;
+}
+.button_container {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button_link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  margin: 30px;
+  height: 20px;
+  width: 150px;
+  font-weight: bold;
+  font-size: 1.5vmax;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 20px 2px rgb(17, 7, 21);
+  background: linear-gradient(-150deg, rgb(122, 45, 104), #3e448a);
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+.button_link:hover {
+  transform: scale(1.05);
+  background: linear-gradient(-150deg, rgb(193, 114, 114), #20223d);
+}
+.button_link:active {
+  transform: scale(0.98);
+}
+footer {
+  height: 136px;
+  font-weight: bold;
+  font-size: 2.5vmin;
+  background-color: rgb(8, 4, 4);
+  color: white;
+}
+footer p {
+  padding-top: 3vmin;
+  padding-left: 3.5vmin;
+}
+.icon {
+  height: 15px;
+  width: 15px;
+  padding-left: 0.2vmin;
+}
+.contact_container {
+  padding-top: 2vmin;
+  padding-left: 4vmin;
+}
+
+.detail {
+  display: grid;
+  grid-template-columns: 10px 1fr;
+}
+.detail_content {
+  padding-top: -3vh;
+}
+@media (min-width: 400px) {
+  .about h2 {
+    height: 40px;
+    width: 150px;
+    font-size: 3.1vmax;
+  }
+  .button_link {
+    margin-top: 50px;
+    height: 25px;
+    width: 170px;
+    font-size: 1.6vmax;
+  }
+
+  .div_2 {
+    height: 300px;
+    padding: 3vmin 0px;
+  }
+  .icon {
+    height: 20px;
+    width: 20px;
+  }
+  footer {
+    height: 170px;
+  }
+  .detail {
+    display: grid;
+    grid-template-columns: 15px 1fr;
+  }
+}
+@media (min-width: 670px) {
+  .about h2 {
+    height: 45px;
+    width: 180px;
+    font-size: 3.2vmax;
+  }
+  .button_link {
+    margin-top: 70px;
+    height: 28px;
+    width: 200px;
+    font-size: 1.7vmax;
+  }
+  .message {
+    font-size: 10vmax;
+    margin-top: 3.5vmax;
+  }
+  h1 {
+    font-size: 8.5vmin;
+    height: 21vmin;
+  }
+  .icon {
+    height: 25px;
+    width: 25px;
+  }
+  footer {
+    height: 200px;
+  }
+  .detail {
+    display: grid;
+    grid-template-columns: 18px 1fr;
+  }
+}
+@media (min-width: 800px) {
+  h1{
+  width:95vmin ;
+  }
+  .about h2 {
+    height: 55px;
+    width: 240px;
+    font-size: 3.3vmax;
+  }
+  .button_link {
+    margin-top: 80px;
+    height: 30px;
+    width: 240px;
+    font-size: 1.8vmax;
+  }
+  .message {
+    margin-top: 4vmax;
+  }
+  h1 {
+    font-size: 9vmin;
+    height: 22vmin;
+  }
+  .div_2 {
+    height: 380px;
+    padding: 3vmin 0px;
+  }
+  .icon {
+    height: 30px;
+    width: 30px;
+  }
+  .detail {
+    display: grid;
+    grid-template-columns: 23px 1fr;
+  }
+}
+@media (min-width: 1000px) {
+    h1{
+  width:100vmin ;
+  }
+
+  .about h2 {
+    height: 70px;
+    width: 300px;
+    font-size: 3.4vmax;
+  }
+  .button_link {
+    margin-top: 100px;
+    height: 45px;
+    width: 380px;
+    font-size: 1.9vmax;
+  }
+  .message {
+    margin-top: 6vmax;
+  }
+  h1 {
+    font-size: 9.5vmin;
+    height: 23vmin;
+  }
+  .div_2 {
+    height: 400px;
+    padding: 3vmin 0px;
+  }
+  .icon {
+    height: 35px;
+    width: 35px;
+  }
+  footer {
+    height: 230px;
+  }
+  .detail {
+    display: grid;
+    grid-template-columns: 28px 1fr;
+  }
+}
