@@ -107,6 +107,10 @@ main {
   margin: 2vw;
   padding: 2vw;
 }
+.common_class_1{
+  margin: 1vw;
+  padding: 1vw;
+}
 .heading {
   width: 20vw;
   padding: 2px;
@@ -124,6 +128,7 @@ main {
   font-size: 1.8vw;
   border-radius: 2vw;
 }
+
 .box_shadow{
    box-shadow: 1px 3px 10px 5px #2b2b68;
   padding: 2vw;
@@ -168,19 +173,31 @@ main {
   font-weight: bold;
   margin: 1px;
 }
+.Project_container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows:auto auto;
+  gap: 4vw;
+}
+ .Project{
+  width:auto;
+
+} 
 .project_grid{
+
   display: grid;
   grid-template-rows:auto auto auto auto auto;
 }
 .Project_image{
   height: 100%;
   width: 100%;
+  max-width: none;
+  display: block;
 }
 .Project_img_container{
-   width: 100%; 
-  min-height:70px;
-  height: auto;
-  overflow-y: scroll;
+  height: 100px;
+  width: 20vw;
+  overflow: auto;
   border-radius: 2vw; 
 
 }
@@ -188,87 +205,64 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-   font-size: 2.5vw;
+   font-size: 1.8vw;
+   flex-wrap: wrap;
    font-weight: bold;
    /* padding: 0.3vw; */
    margin-top: 1vw;
-   margin-bottom: 3vw;
+   margin-bottom: 1.5vw;
 }
 .project_tag{
+  padding:1vh 0px;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
   font-weight: bold;
-  font-size: 1.8vw;
-  padding: 1vw;
-  margin: 0.5vw;
+  flex-wrap: wrap;
+  font-size: 1.2vw;
+  
 }
 .project_tag p{
   padding: 0.3vw;
-  color: black;
-  background-color:gold;
-  border-radius: 0.3vw;
+  border-radius: 4px;
+background-color: #ffd700; /* Your yellow theme color */
+    color: #000000;
 }
 .project_description{
   font-weight: bold;
-   font-size: 2vw;
-  padding: 0.3vw;
+   font-size: 1.5vw;
+  /* padding: 0.3vw; */
+  display: flex;
+  flex-wrap: wrap;
 }
 .project_text {
-  font-size: 1.8vw;
+  font-size: 1.5vw;
   padding:0.3vw;
 }
 .button_container{
   display: flex;
-  gap: 2vw;
+  flex-direction: row;
+ justify-content: space-between;
   flex-wrap: wrap;
 }
 .link_button{
   text-decoration: none;
   background-color: #2b2b68;
-  font-size: 1.8vw;
+  width: 30%;
+  font-size: 1.1vw;
   font-weight: bold;
-  padding: 1.5vw;
-  margin: 0.5vw;
-  border-radius: 2vw;
-}
-/* .Project{
-  margin-top: 7h;
+   padding:1vw ;
+   margin: 0.5vw; 
+  border-radius: 1.8vw;
   display: flex;
-  flex-direction: row;
-   gap: 5vw; 
- } 
-.project_grid{
-  border: 1px solid white;
-   display: grid;
-  grid-template-rows:100px 30px; 
-} 
- .project_scroll_box{
-  grid-row-start: 1; 
-  width: 100%; 
-  height: 80px;
-  overflow-y: scroll;
-  border-radius: 8px;   
-} 
-.project_heading{
-  grid-row-start: 2;
-  color: white;
-  background-color:black;
-   display: flex;
   justify-content: center;
-  align-items: center; 
-  font-size:4vw ;
-} */
+  align-items: center;
+  flex-wrap: wrap; 
+}
 
 @media (min-width: 576px) {
   #information {
     margin-top: 9vh;
     margin-bottom: 10px;
     grid-template-columns: 28vw 1fr;
-  }
-  .project_scroll_box {
-    margin-top: 15vh;
-    width: 100%;
   }
 }
 @media (min-width: 992px) {
@@ -277,15 +271,9 @@ main {
     margin-bottom: 10px;
     grid-template-columns: 25vw 1fr;
   }
-  .project_scroll_box {
-    width: 100%;
-  }
 }
 @media (min-width: 1200px) {
   #information {
     grid-template-columns: 22vw 1fr;
-  }
-  .project_scroll_box {
-    width: 100%;
   }
 }
