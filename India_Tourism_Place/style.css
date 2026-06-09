@@ -8,7 +8,7 @@ body {
   width: 100%;
   display: grid;
   grid-template-columns: 80px 1fr;
-  grid-template-rows: 130px 1fr;
+  grid-template-rows: 160px 1fr;
   margin-bottom: 10vh;
 }
 
@@ -61,7 +61,7 @@ header {
 .row_2 {
   grid-row-start: 2;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 45vw 1fr;
   gap: 1.5vw;
 }
 .column_1,
@@ -155,11 +155,41 @@ section {
   font-weight: bold;
   font-size: 4px;
 }
+.heading{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 2px;
+}
+.color_1{
+  background-color: #1C1C36;
+  width: 35%;
+  margin: 2px 9vw;
+color: white;
+padding: 1vw;
+border-radius: 2vw;
+}
+.color_2{
+   background-color: #1C1C36;
+  width: 90%;
+  margin: 2px 1.5vw;
+color: white;
+padding: 1vw;
+border-radius: 2vw;
+}
+.color_3{
+   background-color: #206d9d;
+  width: 60%;
+  margin: 2px 4.5vw;
+color: white;
+padding: 1vw;
+border-radius: 2vw;
+}
 @media (min-width: 410px) {
   body {
     display: grid;
     grid-template-columns: 150px 1fr;
-    grid-template-rows: 180px 1fr;
+    grid-template-rows: 210px 1fr;
     /* gap:px; */
   }
  .column_1{
@@ -227,7 +257,7 @@ section {
   body {
     display: grid;
     grid-template-columns: 150px 1fr;
-    grid-template-rows: 250px 1fr;
+    grid-template-rows: 280px 1fr;
     /* gap:px; */
   }
   header {
@@ -292,7 +322,7 @@ section {
   body {
     display: grid;
     grid-template-columns: 150px 1fr;
-    grid-template-rows: 300px 1fr;
+    grid-template-rows: 330px 1fr;
     /* gap:px; */
   }
   header {
@@ -361,7 +391,7 @@ section {
   body {
     display: grid;
     grid-template-columns: 150px 1fr;
-    grid-template-rows: 400px 1fr;
+    grid-template-rows: 440px 1fr;
     /* gap:px; */
   }
   header {
