@@ -8,7 +8,7 @@ body {
   width: 100%;
   display: grid;
   grid-template-columns: 80px 1fr;
-  grid-template-rows: 160px 1fr;
+  grid-template-rows: 180px 1fr;
   margin-bottom: 10vh;
 }
 
@@ -62,30 +62,88 @@ header {
   grid-row-start: 2;
   display: grid;
   grid-template-columns: 45vw 1fr;
-  gap: 1.5vw;
 }
-.column_1,
+
 .R2_column_2 {
   background-color: black;
   color: white;
   padding: 2vw;
+  
 }
 .column_1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 2.5vmin;
-}
-.column_2,
-.R2_column_1 {
+ background-image: url(Images/second.jpg); 
+ width: 100%;
+  aspect-ratio: 16/9; 
+  background-size: 100% 100%; 
+  background-repeat: no-repeat; 
+  object-fit: cover;
+  overflow: hidden;
   padding: 2vw;
-  background-color: #f9c487;
+  padding;
+   display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  font-size: 2.5vmin;
+  color:white;
+  margin-right: 2vw;
+  border-radius: 2vw;
+}
+.indian{
+  position: relative;
+  margin-left: -10vw; 
+}
+.tourism{
+  position: relative;
+  margin-left:5vw;
+}
+.indian::after {
+  content: '';
+  position: absolute;
+  bottom:0;
+  left:-1vw;
+  width: 6.5vw; /* Width of the red line */
+  height: 0.5vw; /* Thickness of the line */
+  background-color: #ff4500; /* Red/Orange color */
+  z-index: 1;
+  border-radius:2vw ;
+}
+
+/* Optional: The dark grey full-width line underneath */
+.tourism::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: -1vw;
+  width: 10vw; /* Width of the red line */
+  height: 0.5vw; /* Thickness of the line */
+  background-color: #ff4500; /* Red/Orange color */
+  z-index: 2;
+  border-radius:2vw ;
+}
+.R2_column_1{
+   padding: 2vw;
+  background-color:#151523;
   font-size: 1.3vw;
+  color: white;
+  border-radius: 2vw;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.column_2{
+  padding: 2vw;
+  background-color:#151523;
+  font-size: 1.3vw;
+  color: white;
+  border-radius: 2vw;
 }
 .R2_column_2 {
   font-size: 1.3vw;
+  border-radius: 2vw;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
 }
+
 main {
   /* all grid inside this */
   display: grid;
@@ -162,7 +220,7 @@ align-items: center;
 margin-bottom: 2px;
 }
 .color_1{
-  background-color: #1C1C36;
+  background-color: #1255A2;
   width: 35%;
   margin: 2px 9vw;
 color: white;
@@ -170,7 +228,7 @@ padding: 1vw;
 border-radius: 2vw;
 }
 .color_2{
-   background-color: #1C1C36;
+   background-color: #1255A2;
   width: 90%;
   margin: 2px 1.5vw;
 color: white;
@@ -178,23 +236,27 @@ padding: 1vw;
 border-radius: 2vw;
 }
 .color_3{
-   background-color: #206d9d;
+   background-color: #1255A2;
   width: 60%;
   margin: 2px 4.5vw;
 color: white;
 padding: 1vw;
 border-radius: 2vw;
 }
+
 @media (min-width: 410px) {
   body {
     display: grid;
     grid-template-columns: 150px 1fr;
-    grid-template-rows: 210px 1fr;
+    grid-template-rows: 260px 1fr;
     /* gap:px; */
   }
  .column_1{
     font-size:3vmin ;
   }
+  .tourism::before {
+  width: 12vw; /* Width of the red line */
+}
   header {
     margin-bottom: 1.8vh;
     gap: 1.2vh;
@@ -257,7 +319,7 @@ border-radius: 2vw;
   body {
     display: grid;
     grid-template-columns: 150px 1fr;
-    grid-template-rows: 280px 1fr;
+    grid-template-rows: 330px 1fr;
     /* gap:px; */
   }
   header {
@@ -267,6 +329,9 @@ border-radius: 2vw;
   .column_1{
     font-size:4vmin ;
   }
+  .tourism::before {
+  width: 15vmin; /* Width of the red line */
+}
   main {
     grid-template-rows: repeat(4, 330px);
   }
@@ -322,7 +387,7 @@ border-radius: 2vw;
   body {
     display: grid;
     grid-template-columns: 150px 1fr;
-    grid-template-rows: 330px 1fr;
+    grid-template-rows: 420px 1fr;
     /* gap:px; */
   }
   header {
@@ -332,6 +397,9 @@ border-radius: 2vw;
    .column_1{
     font-size:4.5vmin ;
   }
+   .tourism::before {
+  width: 17vmin; /* Width of the red line */
+}
   .column_2,
   .R2_column_1,.R2_column_2  {
     font-size: 1.3vw;
@@ -391,7 +459,7 @@ border-radius: 2vw;
   body {
     display: grid;
     grid-template-columns: 150px 1fr;
-    grid-template-rows: 440px 1fr;
+    grid-template-rows: 590px 1fr;
     /* gap:px; */
   }
   header {
@@ -401,6 +469,9 @@ border-radius: 2vw;
    .column_1{
     font-size:7vmin ;
   }
+   .tourism::before {
+  width: 26vmin; /* Width of the red line */
+}
   .column_2,
   .R2_column_1,.R2_column_2  {
     font-size: 1.3vw;
