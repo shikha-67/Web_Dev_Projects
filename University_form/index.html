@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-color: rgb(101, 101, 151);">
+    <h1>University Registration Form</h1>
+    <p>Fill details</p>
+    <hr>
+    <h2>Personal details</h2>
+    <form >
+        <label for="First Name">First Name</label>
+        <input type="text" id="FisrtName" name="First Name" placeholder="e.g. Aryan" required>
+
+        <br><br>
+        <label for="Last Name">Last Name</label>
+        <input type="text"  id="LastName" name="Last Name" placeholder="e.g. Kumar">
+
+
+        <br><br>
+        <label for="Date of Birth">Date of Birth</label>
+        <input type="date" id="DOB" name="Date of Birth" required>
+
+        <br><br>
+        Gender:<br>
+
+        <label for="Male">Male</label>
+        <input type="radio" value="Male" name="gender" id="male"><br>
+
+        <label for="Female">Female</label>
+        <input type="radio" value="female" name="gender" id="female"><br>
+
+        <label for="Other">Other</label>
+        <input type="radio" value="other" name="gender" id="other">
+    
+<br><br>
+    <label>Upload your photo</label><br>
+    <input type="file" name="file">
+    <hr>
+
+    <h2>Contact Information</h2>
+    <br><br>
+
+    <label for="Email Address">Email Address</label>
+    <input type="email" name="email" placeholder="you@example.com">
+    
+
+    <br><br>
+    <label for="Phone Number">Phone Number</label>
+    <input type="tel" name="mob no" placeholder="e.g.123456789">
+    
+    <br><br>
+    <label for="Mailing Address">Mailing Address</label><br>
+    <textarea type="text" name="maddress" placeholder="street Address, City,state,ZIP Code" rows"40" cols="20"></textarea>
+
+    <br><br>
+    <hr>
+    <br>
+    <h2>Academic Information</h2>
+    <!-- making dropdowns section using select -->
+
+    <label for="course">Select your course</label>
+    <select name="course" id="course">
+        <option value="">Choose your course</option>
+        <option value="CSE">CSE</option>
+        <option value="ME">ME</option>
+        <option value="CE">CE</option>
+    </select>
+
+ <br><br>
+ <p>Extracurricular Interests:</p>
+
+    <input type="checkbox" value="Sports" name="Interests" id="sports">
+    <label for="sports">Sports</label><br>
+
+    
+    <input type="checkbox" value="music & arts" name="Interests" id="music">
+    <label for="music">Music & Arts</label><br>
+
+    
+     <input type="checkbox" value="technology" name="Interests" id="tech">
+     <label for="tech">Technology Clubs</label><br>
+
+     
+      <input type="checkbox" value="volunteering" name="Interests" id="voulnteerf">
+      <label for="valunteering">volunteering</label>
+      <br>
+
+      <hr>
+      <h2>Create Your Account</h2>
+
+      <br><br>
+      <label for="password">Create a Password</label>
+      <input type="password" name="password">
+
+      <br><br>
+      <label for="petname">Security Question:</label>
+      <select name="pet name" id="pet">
+        <!-- if vlaue if not filled in any dropdown option then it will simply appear as text msg -->
+        <option value="">Choose a pet name</option>
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+        <option value="cow">Cow</option>
+        <option value="bird">Bird</option>
+      </select>
+      
+      <br><br>
+      <label for="security">Security Answer:</label>
+      <input type="text" name="keys">
+      <br><br>
+
+      <input type="checkbox" value="agree to terms and condition" name="terms and condition">
+      <label for="terms">I agree to terms and condtions</label>
+ 
+      <br><br>
+      <!-- 1st method of creating button using botton tag -->
+     <button type="submit">Register</button>
+     <button type="submit" style="background-color: rgb(112, 112, 168);">Clear form</button>
+<br><br>
+
+     <!-- 2nd method using sunmit type inside input tag -->
+      <input type="submit" value="Register">
+      <input type="submit" value="Clear Form">
+<br><br>
+      <button type="submit"><img src="icon.png" height="50px" width="100px"></button>
+      <br><br>
+      <label for="range">Enter range</label>
+      <input type="range">
+</form>
+</body>
+
+</html>
