@@ -52,7 +52,11 @@ main{
 .India,.Tour{
   font-weight: bold;
   font-size: 13vmin;
-  color: rgb(120, 115, 8);
+  color: rgb(103, 6, 6);
+  text-shadow: 
+    0 0 10px #00d2ff,   /* Sharp inner glow */
+    0 0 20px #131e20,   /* Medium glow */
+    0 0 40px #01060c; 
 }
 
 .India{
@@ -67,12 +71,6 @@ main{
   display: grid;
   grid-template-rows: 50px 1fr;
 }
-/* .column_2{
-  grid-column-start: 2;
-  
-} */
-
-
 .margin{
   margin: 3vw;
 }
@@ -150,71 +148,9 @@ main{
   width: 50%;
  padding: 2vw;
 }
-  /* font-weight: bold; */
+  
 }
 
-  /* #Menu {
-  width: 35px;
-  background-color: black;
-  margin: 20px 0px 10px 10px;
-  cursor: pointer;
-}
-.bar {
-  height: 8px;
-  width: 100%;
-  background-color: white;
-  border-radius: 0.3vw;
-  transition: 0.1s ease-in;
-}
-#bar1 {
-  transform: translateY(-3px);
-}
-#bar3 {
-  transform: translateY(3px);
-}
-.nav {
-  margin: 0;
-  transition: 1s ease;
-  display: none;
- background-color: #bfd1dd; /* Solid dark grey color so nothing bleeds through */
-    /* z-index: 99999 !important;  
-}
-.nav li {
-  margin-left: 3vw;
-  padding: 10px;
-}
-.nav li a:hover {
-  border: 0.5vw solid white;
-  border-radius: 2vw;
-  padding: 10px 20px;
-}
-.icon .bar{
-  background-color: white;
-}
-.icon #bar1 {
-  transform: translateY(10.01px) rotate(-45deg);
-}
-.icon #bar3 {
-  transform: translateY(-11px) rotate(45deg);
-}
-.icon #bar2 {
-  opacity: 0;
-}
-.change {
-  position: absolute;
-  height: 100vh;
-  background-color: rgb(255, 0, 119);
-  z-index: -100;
-  top: 0;
- margin: 0;
-  width: 30vmax;
-  font-size: 30px;
-  font-weight: bold;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-} */ 
 
 @media (min-width:770px){
    .paragraph{
