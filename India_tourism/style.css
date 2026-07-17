@@ -16,7 +16,7 @@ body {
   z-index: 2;
   display: flex;
   justify-content: space-around;
-   background: linear-gradient(to left, #444C54, black);
+   background: linear-gradient(to left, #444C54, rgb(2, 23, 27));
 height: 50px;
 width: 100%;
 }
@@ -35,25 +35,26 @@ main{
   /* background-color: blue; */
   height: 400px;
   grid-row-start: 2;
-  /* display: grid;
-  grid-template-rows:1fr 1fr; */
+  display: grid;
+  grid-template-rows:1fr 1fr;
 }
 .row_1{
+  grid-row-start: 1;
   width: 100%;
-  height: 400px;
+  height: 280px;
   background-image: url('Images/nine.jpg');
   background-size: cover;
  display: flex;
  flex-direction: column;
  justify-content: flex-start;
- margin-bottom: 5vh;
  
 }
 .India,.Tour{
   font-weight: bold;
-  font-size: 10vmin;
-  color:#120d31;
+  font-size: 13vmin;
+  color: rgb(120, 115, 8);
 }
+
 .India{
  margin-top: 15vh;
  margin-left: 10vw;
@@ -61,38 +62,107 @@ main{
 .Tour{
   margin-left: 20vw;
 }
-.row_2{
-  height: 200px;
-  display: grid;
-  grid-template-columns: 1fr 1fr; 
-}
 .column_1{
-  grid-column-start: 1;
+  grid-row-start: 1;
   display: grid;
   grid-template-rows: 50px 1fr;
 }
-.column_2{
+/* .column_2{
   grid-column-start: 2;
   
+} */
+
+
+.margin{
+  margin: 3vw;
 }
-.image_container{
+.about{
+  height: 3vh;
+  font-size: 3vw;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to left, #444C54, rgb(2, 23, 27));
+ color: white;
+ border-radius: 100px;
+ padding: 2vw;
+}
+.heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.row_2{
+  grid-row-start: 2;
+  display: grid;
+  grid-template-rows:120px 1fr ;
+  gap: 2vw;
+}
+.column_1{
+  grid-row-start: 1;
+}
+.column_2{
+  grid-row-start: 2;
   
 }
 .Images{
-  height: 100%;
+  height: 200px;
   width: 100%; 
+  max-width: 100%;
+  display: block;
 }
-@media (max-width:770px){
-  #Menu {
+.paragraph{
+  font-size:1.5vw ;
+  padding: 1vh 0px;
+  /* font-weight: bold; */
+}
+@media (min-width:470px){
+  header{
+      background: linear-gradient(to left, #444C54, black);
+  }
+ .paragraph{
+  font-size:1.5vw ;
+  padding: 1.5vh 0px;
+ }
+ .row_1{
+  height: 300px;
+ }
+ .row_2{
+  display: grid;
+  grid-template-columns:1fr 1fr ;
+}
+.column_1{
+  grid-column-start: 1;
+}
+.column_2{
+  grid-column-start: 2;
+}
+.Images{
+  height: 300px;
+  width: 100%; 
+  max-width: 100%;
+  display: block;
+}
+.about{
+  height: 3vh;
+  font-size: 3vw;
+  width: 50%;
+ padding: 2vw;
+}
+  /* font-weight: bold; */
+}
+
+  /* #Menu {
   width: 35px;
-  background-color: white;
+  background-color: black;
   margin: 20px 0px 10px 10px;
   cursor: pointer;
 }
 .bar {
-  height: 10px;
+  height: 8px;
   width: 100%;
-  background-color: black;
+  background-color: white;
   border-radius: 0.3vw;
   transition: 0.1s ease-in;
 }
@@ -106,8 +176,8 @@ main{
   margin: 0;
   transition: 1s ease;
   display: none;
- background-color: #2c3338; /* Solid dark grey color so nothing bleeds through */
-    z-index: 99999 !important;  
+ background-color: #bfd1dd; /* Solid dark grey color so nothing bleeds through */
+    /* z-index: 99999 !important;  
 }
 .nav li {
   margin-left: 3vw;
@@ -144,13 +214,25 @@ main{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+} */ 
+
+@media (min-width:770px){
+   .paragraph{
+  font-size:1.5vw ;
+  padding: 2.5vh 0px;
+  /* font-weight: bold; */
 }
+.row_1{
+  height: 450px;
+ }
 }
-@media (min-width:771px){
-  .row_1{
-  height: 600px;
-  }
-  .India,.Tour{
-  font-size: 10vmax;
-  }
+@media (min-width:1024px){
+   .paragraph{
+  font-size:1.5vw ;
+  padding: 4vh 0px;
+  /* font-weight: bold; */
+}
+.row_1{
+  height: 500px;
+ }
 }
