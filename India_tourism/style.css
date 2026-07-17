@@ -9,7 +9,7 @@ body {
 .header{
   grid-row-start: 1; 
 }
-.nav{
+.navigation{
   position: fixed;
   top: 0;
   left: 0;
@@ -20,16 +20,15 @@ body {
 height: 50px;
 width: 100%;
 }
-.nav li {
+.navigation li {
   list-style: none;
-  padding:5px 1.5vw;
+  padding:12px 1.5vw;
 }
-.nav li a{
+.navigation li a{
   text-decoration: none;
   font-size: 5vmin;
   font-weight: bold;
   color: white;
-
 }
 main{
   /* background-color: blue; */
@@ -123,6 +122,13 @@ main{
   font-size:1.5vw ;
   padding: 1.5vh 0px;
  }
+ .navigation{
+  height: 60px;
+ }
+ .navigation li {
+  list-style: none;
+  padding:12px 1.5vw;
+}
  .row_1{
   height: 300px;
  }
@@ -158,6 +164,9 @@ main{
   padding: 2.5vh 0px;
   /* font-weight: bold; */
 }
+.navigation{
+  height: 70px;
+ }
 .row_1{
   height: 450px;
  }
@@ -171,4 +180,7 @@ main{
 .row_1{
   height: 500px;
  }
+ .navigation li {
+  padding:15px 1.5vw;
+}
 }
